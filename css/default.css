@@ -1,0 +1,317 @@
+*{box-sizing: border-box;font-family: monospace ,sans-serif, Arial;
+}
+:root {
+  --primaryColor:#1a237e; /*rgb(26,35,126) */
+  --primaryColorDark: #000051;
+  --primaryLightColor: #8bf6ff;
+  --primaryVeryLight:#e1f5fe;
+  --secondaryColor: #455a64;
+  --secondaryDarkColor: #1c313a; /*rgb(28,50,58)*/
+  --secondaryColorLight: #afc2cb;
+  --bgdColorFooter: rgb(0,0,30);
+  --bgdColorIntro:rgb(240,250,255);
+}
+
+/* ---- intro image ----*/
+.title{
+  font-size: 6em;
+  font-family: LCD5x8H;
+  color: var(--primaryLightColor);
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 10px 10px 3px var(--secondaryDarkColor);
+  position: absolute;
+  bottom: 0;
+}
+figure{
+  width: 1200px;
+  height: 600px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+.introImage{
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(to left top, rgba(28,50,58,0.6), rgba(26,35,126,0.4)), url('../images/circuit-board.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px black;
+}
+/* --- navigation tabs ---*/
+.navTab{
+  width: 1200px;
+  height: 60px;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+.navTab a{
+    float: left;
+    color: var(--primaryColor);
+    text-decoration: none;
+    width: 25%;
+    height: 100%;
+    background-color: var(--secondaryColorLight);
+    border-right: ridge var(--secondaryColor);
+    padding: 10px;
+}
+.activeNavTab, .navTab a:hover{
+  background-color: var(--secondaryColor);
+  color: var(--primaryVeryLight);
+}
+/*--- text container --*/
+.txtContainer{
+  width: 1200px;
+  height: auto;
+  padding: 100px 20px 100px 20px;
+  margin: auto;
+  background-color: var(--bgdColorIntro);
+}
+dt{color: var(--primaryColor);}
+/* --- TOPICS ---*/
+.topics{
+  width: 1200px;
+  height: auto;
+  background-color: var(--primaryVeryLight);
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.collapsible{
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+}
+.collapsible{
+  background-color: var(--primaryVeryLight);
+  color: var(--primaryColorDark);
+}
+.colorExercise{
+  background-color: var(--primaryLight);
+  color: var(--primaryColorDark);
+}
+.colorLab{
+  background-color: var(--primaryColor);
+  color: var(--primaryVeryLight);
+}
+.active, .collapsible:hover{
+  background-color: var(--primaryColorDark);
+  color: var(--secondaryColorLight);
+}
+.collapsible:after{
+  content: '\002B';
+  color: var(--secondaryDarkColor);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+  color: var(--secondaryColorLight);
+  padding: 5px;
+  border-radius: 5px;
+}
+.content {
+  padding: 5px 15px 30px 15px;
+  display: none;
+  overflow: hidden;
+  background-color: var(--bgdColorIntro);
+  height: auto;
+}
+.content iframe{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 60%;
+  height: 500px;
+}
+.download{
+  text-decoration: none;
+  background-color: var(--secondaryColorLight);
+  color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 600;
+}
+.download:hover{background-color: var(--secondaryColor); color: var(--primaryVeryLight);}
+/* --  -- */
+.exercises, .labExp, .wi, .credits{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+.exercises{
+background-color: var(--primaryLightColor);}
+/* ----*/
+.labExp{  background-color: var(--primaryColor);}
+.khanLink{ padding: 12px; background-color: var(--secondaryDarkColor); color: var(--primaryVeryLight); text-decoration: none; border-radius: 12px;}
+.khanLink:hover{
+  background-color: var(--primaryColor); color: var(--secondaryColorLight);
+}
+.khanCred{
+  font-size: 11px;
+}
+/* --- credits -------*/
+.credits{
+  background-color: var(--bgdColorFooter);
+  padding: 100px 20px 100px 20px;
+  color: white;
+  height: auto;
+
+}
+.copyrighted{
+  width: 100%;
+  height: 50px;
+}
+.credits img{
+  width: 160px;
+  height: 50px;
+  float: left;
+  margin-right: 30px;
+}
+.credits a{
+  text-decoration: none;
+  color: white;
+}
+.credits h6{
+  text-align: center;
+}
+
+/*------------- MEDIA SCREEN ----------------------------------------
+*/
+@media only screen and (max-width: 1250px){
+  figure{   width: 800px;   height: 400px; }
+  .introImage{  height: 400px;}
+  .p1, .p2, .p3{  font-size: 1em;}
+  .p1 i, .p2 i{  font-size: 0.6em;}
+  .p3 i{font-size: 0.5em}
+  .p3{font-size: 1.3em; right: 10%;}
+
+  /* --- navigation tabs ---*/
+  .navTab{
+    width: 800px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  .navTab a{ padding: 15px; }
+
+  /*--- text container --*/
+  .txtContainer{
+    width: 800px;
+    height: auto;
+    padding: 60px 15px 60px 15px;
+    font-size: 0.9em;
+  }
+
+  /* --- topics ---*/
+  .topics, .exercises, .labExp, .wi{
+    width: 800px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 0.9em;
+  }
+  .collapsible{
+    padding: 18px;
+    font-size: 1em;
+  }
+  /* --- collapsible content --*/
+  .content {
+    padding: 0 15px;
+    font-size: 1em;
+  }
+/* --- credits -------*/
+.credits{
+  width: 800px;
+  padding:60px 18px 60px 18px;
+  font-size: 0.9em;
+}
+.copyrighted i{
+  font-size: 0.8em;
+}
+}/* end of media
+/*
+------------- SMALL AND TABLET SCREEN ---------------
+*/
+@media only screen and (max-width: 850px) {
+  figure{
+    width: 460px;
+    height: 300px;
+  }
+  .title{       font-size: 1.7em;   }
+  .introImage{  height: 300px;}
+  .p1, .p2, .p3{  font-size: 0.8em; width: 90%;}
+  .p1, .p2{color: var(--primaryVeryLight)}
+  .p1 i, .p2 i{  font-size: 0.6em;}
+  .p3 i{font-size: 0.5em}
+  .p3{font-size: 0.85em; right: 5%; left: 5%;}
+
+  /* --- navigation tabs ---*/
+  .navTab{
+    width: 460px;
+    height: 45px;
+    margin-top: 15px;
+    font-size: 0.63em;
+  }
+
+  /*--- text container --*/
+  .txtContainer{
+    width: 460px;
+    height: auto;
+    padding: 60px 10px 60px 10px;
+    font-size: 0.7em;
+  }
+/* -- youtube video --- */
+.content iframe{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  height: 300px;
+}
+  /* --- topics ---*/
+  .topics, .exercises, .labExp, .wi{
+    width: 460px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: 0.7em;
+  }
+  .collapsible{
+    padding: 12px;
+    font-size: 1em;
+  }
+  /* --- collapsible content --*/
+  .content {
+    padding: 0 15px;
+    font-size: 1em;
+  }
+  /* --- credits -------*/
+  .credits{
+    width: 460px;
+    padding: 60px 12px 40px 12px;
+    font-size: 0.7em;
+  }
+  .copyrighted i{
+    font-size: 0.9em;
+  }
+  .copyrighted{
+    height: 50px;
+  }
+  .copyrighted img{
+    margin-top: 10px;
+    width: 110px;
+    height: 35px;
+  }
+}/* end of media
