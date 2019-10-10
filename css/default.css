@@ -189,7 +189,10 @@ background-color: var(--primaryLightColor);}
 .credits h6{
   text-align: center;
 }
-
+.imgActivity3{
+  width: 80%;
+  height: auto;
+}
 /*------------- MEDIA SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 1250px){
