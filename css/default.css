@@ -189,9 +189,12 @@ background-color: var(--primaryLightColor);}
 .credits h6{
   text-align: center;
 }
-.imgActivity3{
-  width: 80%;
-  height: auto;
+.imgActivity{
+	width:90%;
+}
+.imgActivity img{
+	width:100%;
+	height:100%;
 }
 /*------------- MEDIA SCREEN ----------------------------------------
 */
