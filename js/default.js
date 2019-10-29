@@ -25,3 +25,24 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+// --- VIDEO: use in project 2 ---/
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+  if (myVideo.paused)
+    myVideo.play();
+  else
+    myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 1000;
+}
+
+function makeSmall() {
+    myVideo.width = 500;
+}
+
+function makeNormal() {
+    myVideo.width = 750;
+}
