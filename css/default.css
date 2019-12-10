@@ -322,3 +322,12 @@ background-color: var(--primaryLightColor);}
     height: 35px;
   }
 }/* end of media
+/*--- VIDEOS --*/
+.activityVideo{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+.activityVideo video{
+  max-width: 100%;
+}
