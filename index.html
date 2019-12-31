@@ -15,15 +15,14 @@
     </figure>
 
     <!-- navigation tabs -->
-    <div class="navTab" id="navTab">
-      <a class="nav_tabs" href="#course" style="border-left: ridge var(--secondaryColor);" >Web Technology</a>
-      <a class="nav_tabs" href="#chapters">Chapters</a>
-      <a class="nav_tabs" href="#exercises">Class Activity</a>
-      <a class="nav_tabs" href="#labExp">Projects</a>
-    </div>
-    <!-- introduction --->
-  <p class="subtitle" id="course">Web Technology</p>
-    <div class="txtContainer" >   
+    <nav class="navTab" id="navTab">
+        <a class="nav_tabs activeNavTab" href="#course">Web Technology</a>
+        <a class="nav_tabs " href="#chapters">Chapters</a>
+        <a class="nav_tabs " href="#exercises">Class Activity</a>
+        <a class="nav_tabs " href="#labExp">Projects</a>
+    </nav>
+<!-- introduction --->
+    <section class="txtContainer" id="course">
       <dl>
         <dt><b>PREFACE</b></dt>
         <br>
@@ -56,11 +55,11 @@
           </ul>
         </dd>
       </dl>
-    </div>
-	  
+    </section>
+
     <!-- topics -->
-<p class="subtitle" id='chapters'>Chapters</p>
-    <div class="topics" >	    
+    <section class="topics" id='chapters'>
+        <h2 class="subtitle">CHAPTERS</h2>
         <button class="collapsible">1. Web Technology and Introduction to basic HTML tags</button>
         <div class="content">
           <p><b>Introduction to web technology: </b><br><br>In this session, student will learn how the web works, the different type of internet browsers, web servers, screen readers, what do you see on a web and how it is crated, what is HTML, CSS, frameworks, text editors: notepad and atom; where and how to meet the community of web technology.
@@ -310,73 +309,70 @@
             <br><br><hr>
           </div>
 
-      </div> <!-- end of chapters -->
+      </section> <!-- end of chapters -->
 
     <!-- Class Activity -->
-<p class="subtitle"  id="exercises">Class Activity</p>
-    <div class="exercises">
+    <section class="exercises" id="exercises">
+      <h2 class="subtitle">CLASS ACTIVITY</h2>
       <button class="collapsible colorExercise">Class Activity 1 - How internet works and Basic HTML elements</button>
       <div class="content">
 	      <p><b>Class Activity 1A:</b> Download Class Activity 1A and complete the following webpage using some basic HTML elements</p><br><br>
 	  <a href="projects/classActivity.pdf" download target="_blank" class='download'>Download - Class Activity 1A: Basic HTML tags</a><br><br>
-          <hr><br>
+    <hr><br>
 		The Internet is part of nearly everything we do on a daily basis. But do you know how it all works? From WiFi to IP addresses to HTML to keeping information safe online, there’s a lot of important stuff going on that most of us don’t have the opportunity to learn more about. In six short, introductory videos, you’ll get an inside look into foundational concepts of everything from wires to websites, taught by guest lecturers including the actual “Father of the Internet” Vint Cerf, Tumblr founder David Karp, and creators on teams at Google, Spotify, XBox, Symantec, and more.
-          <br><br>
-          <b>Activity 1B: </b>Watch the following videos and complete the quizzes with your course instructor.
-          <br><br>
-            <i style="font-size: 10px;">Material Obtained at www.khanacademy.org</i>
-          <br><br>
-          <hr>
-          <p><i>What is the internet</i> </p>
-          <iframe src="https://www.youtube.com/embed/Dxcc6ycZ73M"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br><hr>
-          <p><i>Wires, cables, and WiFi</i> </p>
-          <iframe  src="https://www.youtube.com/embed/qtmTMvXKKdg"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br><hr>
-          <p><i>IP Addresses and DNS</i> </p>
-          <iframe  src="https://www.youtube.com/embed/MwxMsaFFycg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br><hr>
-          <p><i>Packet, routers, and reliability</i> </p>
-          <iframe  src="https://www.youtube.com/embed/aD_yi5VjF78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br><hr>
-          <p><i>HTTP and HTML</i> </p>
-          <iframe  src="https://www.youtube.com/embed/1K64fWX5z4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br><hr>
-          <p><i>Cybersecurity and Crime</i> </p>
-          <iframe  src="https://www.youtube.com/embed/5k24We8pED8"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </p>
+    <br><br>
+    <b>Activity 1B: </b>Watch the following videos and complete the quizzes with your course instructor.
+    <br><br>
+    <i style="font-size: 10px;">Material Obtained at www.khanacademy.org</i>
+    <br><br><hr>
+    <p><i>What is the internet</i> </p>
+    <iframe src="https://www.youtube.com/embed/Dxcc6ycZ73M"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><hr>
+    <p><i>Wires, cables, and WiFi</i> </p>
+    <iframe  src="https://www.youtube.com/embed/qtmTMvXKKdg"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><hr>
+    <p><i>IP Addresses and DNS</i> </p>
+    <iframe  src="https://www.youtube.com/embed/MwxMsaFFycg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><hr>
+    <p><i>Packet, routers, and reliability</i> </p>
+    <iframe  src="https://www.youtube.com/embed/aD_yi5VjF78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><hr>
+    <p><i>HTTP and HTML</i> </p>
+    <iframe  src="https://www.youtube.com/embed/1K64fWX5z4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><hr>
+    <p><i>Cybersecurity and Crime</i> </p>
+    <iframe  src="https://www.youtube.com/embed/5k24We8pED8"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+  </div>
+  <button class="collapsible colorExercise">Class Activity 2 - HTML Basics</button>
+  <div class="content">
+  <p></p>
+  </div>
+  <button class="collapsible colorExercise">Class Activity 3 - Basics CSS</button>
+  <div class="content">
+    <p><i>Basic CSS activity</i>
+      <br><hr>
+      Complete chapter 3 - Introduction to CSS (page 37 to 49) and create the following webpage with the given specifications.
+      <br><br>
+      <div class="imgActivity"><img src="activities/activity3.JPG" alt="Basic CSS Activity" title="Basic CSS Activity">
       </div>
+      <br><br>
+      <a href="projects/ClassActivity3_IntroCSS.pdf" download target="_blank" class='download'>Download Instruction: Basic CSS activity</a>
+	  </p>
+  </div>
 
-      <button class="collapsible colorExercise">Class Activity 2 - HTML Basics</button>
-      <div class="content">
-          <p></p>
+  <button class="collapsible colorExercise">Class Activity 4 - Color and Images using CSS</button>
+  <div class="content">
+	  <p><i>CSS color and image manipulation activity</i>
+  	  <br><hr>
+  	  After completing Chapter 5 – Color and images manipulation (page 69 – 83), create three activities with different image properties as the following:
+  	  <br><br>
+      <div class="imgActivity"><img src="activities/activity_color_img.JPG" alt="CSS color and image manipulation activity" title="CSS color and image manipulation activity">
       </div>
-
-      <button class="collapsible colorExercise">Class Activity 3 - Basics CSS</button>
-      <div class="content">
-	      <p><i>Basic CSS activity</i>
-	      <br><hr>
-	      Complete chapter 3 - Introduction to CSS (page 37 to 49) and create the following webpage with the given specifications.
-	      <br><br>
-        <div class="imgActivity"><img src="activities/activity3.JPG" alt="Basic CSS Activity" title="Basic CSS Activity">
-        </div>
-        <br><br>
-	       <a href="projects/ClassActivity3_IntroCSS.pdf" download target="_blank" class='download'>Download Instruction: Basic CSS activity</a>
-	      </p>
-      </div>
-
-      <button class="collapsible colorExercise">Class Activity 4 - Color and Images using CSS</button>
-      <div class="content">
-	      <p><i>CSS color and image manipulation activity</i>
-	      <br><hr>
-	      After completing Chapter 5 – Color and images manipulation (page 69 – 83), create three activities with different image properties as the following:
-	      <br><br>
-        <div class="imgActivity"><img src="activities/activity_color_img.JPG" alt="CSS color and image manipulation activity" title="CSS color and image manipulation activity">
-        </div>
-        <br><br>
-	       <a href="activities/ClassActivity4.pdf" download target="_blank" class='download'>Download Instruction: Basic CSS activity</a>
-	      </p>
-      </div>
+      <br><br>
+  	  <a href="activities/ClassActivity4.pdf" download target="_blank" class='download'>Download Instruction: Basic CSS activity</a>
+	   </p>
+  </div>
 
      <button class="collapsible colorExercise">Class Activity 5 - CSS animation</button>
       <div class="content">
@@ -458,11 +454,11 @@
       </div>
 
 
-    </div><!--end of exercises -->
+    </section><!--end of exercises -->
 
     <!-- PROJECTS -->
-<p class="subtitle" id="labExp">Projects</p>
-    <div class="labExp" >
+    <section class="labExp" id="labExp">
+      <h2 class="subtitleProject">PROJECTS</h2>
       <button class="collapsible colorLab">Project 1 - Informative Wesite using HTML</button>
       <div class="content">
         <p><b>Introduction</b><br><br>
@@ -528,10 +524,10 @@
         </div>
 
 
-    </div><!-- end of projects -->
+    </section><!-- end of projects -->
 
     <!-- credits -->
-        <div class="credits" id="credits">
+        <section class="credits" id="credits">
           This Web Technology OER material, by Huixin Wu, is copyrighted under the terms of a Creative Commons license:
           <br><br>
            <div class="copyrighted">
@@ -556,7 +552,7 @@
             <i><h6>Web Technology: material prepared by professor Huixin Wu @ 2019</h6></i>
 
 
-        </div><!-- end of credits -->
+        </section><!-- end of credits -->
 
     <script type="text/javascript" src="js/default.js">
 
