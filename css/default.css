@@ -17,17 +17,44 @@ html{scroll-behavior:smooth;}
 }
 /* ---- intro image ----*/
 .title{
-  font-size: 6em;
+  font-size: 4em;
   font-family: LCD5x8H;
   color: var(--primaryLightColor);
-  width: 100%;
   text-align: center;
   font-weight: 600;
-  text-shadow: 10px 10px 3px var(--secondaryDarkColor);
   position: absolute;
-  bottom: 0;
+  text-shadow: 2px 2px 5px white;
 }
-
+.ani1{
+    left: 0px;
+    top: 200px;
+    text-align: right;
+    width: 40%;
+    animation: title1 3s;
+}
+.ani2{
+    top:200px;
+    right: 0px;
+    text-align: left;
+    width: 60%;
+    animation: title2 3s;
+}
+@keyframes title1 {
+  0%{opacity: 0;top:0; transform: scale(0);text-shadow: 0px 0px 0px white;}
+  20%{opacity: 0.5;top:100px; transform: scale(1.5); text-shadow: 0px 0px 0px white;}
+  40%{opacity: 0;top:2000px; transform: scale(0);text-shadow: 0px 0px 0px white;}
+  60%{opacity: 0.5;top:50px; transform: scale(1.5);text-shadow: -20px -20px 5px white;}
+  80%{opacity: 1;top:200px; transform: scale(0.8);text-shadow: 15px 15px 5px white;}
+  100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px white;}
+}
+@keyframes title2 {
+  0%{opacity: 0;top:2000px; transform: scale(0);text-shadow: 0px 0px 0px white;}
+  20%{opacity: 0.5;top:500px; transform: scale(1.5); text-shadow: 0px 0px 0px white;}
+  40%{opacity: 0;top:-200px; transform: scale(0);text-shadow: 0px 0px 0px white;}
+  60%{opacity: 0.5;top:800px; transform: scale(1.5);text-shadow: -20px -20px 5px white;}
+  80%{opacity: 1;top:200px; transform: scale(0.8);text-shadow: 15px 15px 5px white;}
+  100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px white;}
+}
 figure{
   width: 1200px;
   height: 600px;
@@ -44,6 +71,7 @@ figure{
   position: relative;
   border-radius: 20px;
   box-shadow: 3px 3px 10px black;
+  overflow: hidden;
 }
 /* --- navigation tabs ---*/
 nav{
