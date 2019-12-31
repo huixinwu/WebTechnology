@@ -12,7 +12,9 @@ html{scroll-behavior:smooth;}
   --bgdColorFooter: rgb(0,0,30);
   --bgdColorIntro:rgb(240,250,255);
 }
-
+:target {
+  border: 2px solid var(--secondaryColorLight);
+}
 /* ---- intro image ----*/
 .title{
   font-size: 6em;
@@ -25,6 +27,7 @@ html{scroll-behavior:smooth;}
   position: absolute;
   bottom: 0;
 }
+
 figure{
   width: 1200px;
   height: 600px;
@@ -43,7 +46,7 @@ figure{
   box-shadow: 3px 3px 10px black;
 }
 /* --- navigation tabs ---*/
-.navTab{
+nav{
   width: 1200px;
   height: 60px;
   margin: auto;
@@ -54,20 +57,20 @@ figure{
   position: sticky;
   top: 0;
 }
-.navTab a{
+nav a{
     float: left;
     color: var(--primaryColor);
     text-decoration: none;
     width: 25%;
     height: 100%;
-    background-color: var(--secondaryColorLight);
-    border-right: ridge var(--secondaryColor);
+    background-color: rgba(0,0,0,0.3);
     padding: 10px;
 }
-.activeNavTab, .navTab a:hover{
-  background-color: var(--secondaryColor);
-  color: var(--primaryVeryLight);
+nav a:hover, .activeNavTab{
+  background-color: var(--bgdColorFooter);
+  color: var(--secondaryColorLight);
 }
+
 /*--- text container --*/
 .txtContainer{
   width: 1200px;
@@ -86,6 +89,8 @@ dt{color: var(--primaryColor);}
   padding-top: 90px;
   padding-bottom: 90px;
 }
+.subtitle{padding: 20px 10px 20px 10px; color: var(--primaryColor);font-stretch:ultra-expanded; font-weight: 600;}
+.subtitleProject{padding: 20px 10px 20px 10px; color: var(--primaryVeryLight);font-stretch:ultra-expanded; font-weight: 600;}
 .collapsible{
   cursor: pointer;
   padding: 18px;
