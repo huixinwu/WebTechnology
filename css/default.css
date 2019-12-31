@@ -13,7 +13,7 @@ html{scroll-behavior:smooth;}
   --bgdColorIntro:rgb(240,250,255);
 }
 :target {
-  border: 2px solid var(--secondaryColorLight);
+  border: ridge var(--secondaryColorLight);
 }
 /* ---- intro image ----*/
 .title{
