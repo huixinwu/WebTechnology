@@ -234,6 +234,7 @@ background-color: var(--primaryLightColor);}
 /*------------- MEDIA SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 1250px){
+  .title{font-size: 3em;}
   figure{   width: 800px;   height: 400px; }
   .introImage{  height: 400px;}
   .p1, .p2, .p3{  font-size: 1em;}
