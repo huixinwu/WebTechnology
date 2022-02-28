@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="This OER material is intended for use as the first level of web technology development.It focuses on the skills needed to build, maintain, and administrate a website. At the beginning of the courses, students will learn how to construct and test code in different interfaces such as HTML, CSS, and HTML5. " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/default.css">
     <title>Web Technology</title>
   </head>
   <body>
-
-    <figure>
+    <figure class="introImgContainer">
       <div class="introImage">
         <span class="title ani1">Web&nbsp</span>
         <span class="title ani2">Technology</span>
@@ -17,7 +17,7 @@
 
     <!-- navigation tabs -->
     <nav class="navTab" id="navTab">
-        <a class="nav_tabs activeNavTab" href="#course">Web Technology</a>
+        <a class="nav_tabs" href="#course">Web Technology</a>
         <a class="nav_tabs " href="#chapters">Chapters</a>
         <a class="nav_tabs " href="#exercises">Class Activity</a>
         <a class="nav_tabs " href="#labExp">Projects</a>
@@ -122,17 +122,17 @@
                 <li>Learn how CSS properties in each HTML elements to control the dimensions of boxes, create borders around boxes, set margins and padding for boxes, and show and hide boxes.</li>
               	<li>Learn how to use several CSS properties to work with HTML elements such as lists, tables, and forms. Some of these properties involve in how to specify the type of bullet point or numbering on lists, add borders and backgrounds to table cells, and how to control the appearance of form controls.</li>
             	<li>Understand how to create attractive page layouts</li>
-           	<li>Learn the different between fixed width and liquid layouts, and how they are created</li>
+           	  <li>Learn the different between fixed width and liquid layouts, and how they are created</li>
             	<li>Learn how to control the size alignment of an image, add background images, and images rollover using CSS. </li>
             	<li>Understand how to select elements using id and class</li>
-		<li>Explore the different ways to position elements using normal flow, relative positioning, absolute positioning and floats</li>
+          		<li>Explore the different ways to position elements using normal flow, relative positioning, absolute positioning and floats</li>
               	<li>Discover how various devices have different screen sizes and resolutions, and how this affects the design process</li>
               	<li>Learn how designers use grids to make their page designs look more professional.</li>
               	<li>Learn the different techniques to use and manipulate colors</li>
-		<li>Understand and create simple animation and slideshow using CSS animation @keyframes</li>    
-		<li>Learn and use CSS’s attributes as transition, opacity, and pointer-event to create modal windows</li>
-		<li>Use @media query to create responsive webpages</li>
-	     </ul>
+            		<li>Understand and create simple animation and slideshow using CSS animation @keyframes</li>
+            		<li>Learn and use CSS’s attributes as transition, opacity, and pointer-event to create modal windows</li>
+            		<li>Use @media query to create responsive webpages</li>
+	             </ul>
               <br>
               <a href="chapters/chapter3_IntroCSS.pdf" download target="_blank" class='download'>Download - Introduction to CSS</a>
               </p><br><br>
@@ -143,18 +143,16 @@
               <iframe src="https://www.youtube.com/embed/XN4AxR78Yc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             	<br><hr>
               <iframe src="https://www.youtube.com/embed/XN4AxR78Yc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              
-	</div>
+	        </div>
 
 
           <button class="collapsible">4. Bootstrap 4</button>
           <div class="content">
               <p>Bootstrap is a free and open-source front-end framework (library) for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.</p>
                <a href="chapters/chapter4_bootstrap.pdf" download target="_blank" class='download'>Download -  Chapter 4 - Boostrap</a>
-			  <br><br><hr>
-            </div>
+			            <br><br><hr>
+          </div>
 
-  
           <button class="collapsible">Publishing Website</button>
           <div class="content">
             <p><i class="khanCred">Information retrieved from khanacademy.org</i><br><br>
@@ -175,7 +173,11 @@
               <b>Hosting your website on Github</b>
               <br><br>
               Github is a company that hosts "code repositories", collections of code for projects. Many of the code repositories are "open source", which means they're publicly available for the whole world to browse. That's awesome, because that's how programmers learn from each other and build on each other's work! Khan Academy has quite a few open source repositories. Code repositories can contain all sorts of types of code, not just HTML and CSS - whatever code is needed to make the project work.
+
+              <br><br><hr>
+              <iframe  src="activities/github.mp4" scrolling="no" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen width="100%;"></iframe>
               <br><br>
+
               <a href="https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github" target="_blank" class="khanLink"> Continue Reading</a>
             </p>
             <br><br><hr>
@@ -185,7 +187,7 @@
 
     <!-- Class Activity -->
     <section class="exercises" id="exercises">
-      <h2 class="subtitle">CLASS ACTIVITY</h2>
+      <h2 class="subtitleProject">CLASS ACTIVITY</h2>
       <button class="collapsible colorExercise">Class Activity 1 - How internet works and Basic HTML elements</button>
       <div class="content">
 	<p>The Internet is part of nearly everything we do on a daily basis. But do you know how it all works? From WiFi to IP addresses to HTML to keeping information safe online, there’s a lot of important stuff going on that most of us don’t have the opportunity to learn more about. In six short, introductory videos, you’ll get an inside look into foundational concepts of everything from wires to websites, taught by guest lecturers including the actual “Father of the Internet” Vint Cerf, Tumblr founder David Karp, and creators on teams at Google, Spotify, XBox, Symantec, and more.</p>
@@ -216,13 +218,23 @@
   <div class="content">
 	  <p><i>HTML Basics activity</i>
 	  <br><hr>
-	  Complete Chapter 2 - HTML and create a webpage with the specification shown in the video below. 
+	  Complete Chapter 2 - HTML and create a webpage with:
+    <ul>
+      <li>four images with the same height and width, title, and an external hyperlink. Hint: place the four images inside of the figure container. Also use figcaption</li>
+      <li>have internal links: links to three different places of the same webpage</li>
+      <li>have one description of definition list. Description title should be bold and italic.</li>
+      <li>have on table with background color in different cells, and bold title and subtitle.</li>
+      <li>have an unordered list.</li>
+      <li>have external links to Google maps or address</li>
+      <li>have a footer aligned to the center.</li>
+    </ul>
+    <p>Check template video below:</p>
 	   <!-- VIDEO -->
 		 <div class="activityVideo">
 		    <video controls>
 		      <source src="activities/activity2_HTML.mp4" type="video/mp4">
 		    </video>
-	  	</div>  
+	  	</div>
 	  </p>
   </div>
 
@@ -230,7 +242,17 @@
   <div class="content">
     <p><i>Basic CSS activity</i>
       <br><hr>
-      Complete chapter 2 - Introduction to CSS (page 1-23) and create the following webpage with the given specifications.
+      Complete chapter 2 - Introduction to CSS (page 1-23) and create the following webpage with the following CSS attributes:
+      <ul>
+        <li>a title with color, font-family, text-shadow, aligned to center, and font-size.</li>
+        <li>a paragraph with different font-family, color, aligned to right, and font-size. </li>
+        <li>a paragraph with the first letter with different CSS, such as color and font-size, and alignment as justify.</li>
+        <li>four images with title, border with color and style, and the same height and width. Hint: place the four images inside on a figure element. Also use a figcaption.</li>
+        <li>have a footer aligned to the center.</li>
+        <li>have horizontal ruler</li>
+        <li>have a background color to the whole body element.</li>
+      </ul>
+
       <br><br>
       <div class="imgActivity"><img src="activities/activity3.JPG" alt="Basic CSS Activity" title="Basic CSS Activity">
       </div>
@@ -243,7 +265,14 @@
   <div class="content">
 	  <p><i>CSS color and image manipulation activity</i>
   	  <br><hr>
-  	  After completing Chapter 2 – Color and images manipulation (page 23-46), create three activities with different image properties as the following:
+  	  After completing Chapter 2 – Color and images manipulation (page 23-46), create three activities with different image properties:
+      <ul>
+        <li>have three different images with the same height and width. All three images are placed inside of a figure element.</li>
+        <li>three images should have margin.</li>
+        <li>the first image should have an invert filter, with a text on the bottom of it. The text should have background opacity, border, padding, different font-size, and font color.</li>
+        <li>the second image should have a blur filter, with a text in the middle of it. The text should have background opacity, different font size and color, padding, box shadow, and a hyperlink with background color, font color, and padding.</li>
+        <li>the third image must have a linear gradient filter, have at least three paragraphs with different width and placed in different places on the webpage, and have a title in the center of webpage.</li>
+      </ul>
   	  <br><br>
       <div class="imgActivity"><img src="activities/activity_color_img.JPG" alt="CSS color and image manipulation activity" title="CSS color and image manipulation activity">
       </div>
@@ -261,14 +290,14 @@
 		    <video controls>
 		      <source src="activities/animation.mp4" type="video/mp4">
 		    </video>
-	  	</div>  
+	  	</div>
 	      <br>
 	      </p>
       </div>
 
 	 <button class="collapsible colorExercise">Class Activity 6 - Slideshow using CSS</button>
 	      <div class="content">
-		  <p>After completing Chapter 2: Sildeshow Using Only CSS (Page 61-67), 
+		  <p>After completing Chapter 2: Sildeshow Using Only CSS (Page 61-67),
 			  create two slideshow, one with text and one with images with the specification shown in the video below:
 			  <br>
 			  <!-- VIDEO -->
@@ -276,7 +305,7 @@
 			    <video controls>
 			      <source src="activities/slideshow.mp4" type="video/mp4">
 			    </video>
-			</div>  
+			</div>
 		      </p>
 	      </div>
 
@@ -299,7 +328,7 @@
 			    <video controls>
 			      <source src="activities/modalWindow.mp4" type="video/mp4">
 			    </video>
-			</div>  
+			</div>
 	      </p>
       </div>
 
@@ -415,3 +444,10 @@
 
   </body>
 </html>
+<!--
+<div class="cardContainer">
+  <div class="card">
+    <p>1. Web Technology and Introduction to basic HTML tags</p>
+  </div>
+</div>
+-->
