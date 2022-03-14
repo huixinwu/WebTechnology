@@ -15,7 +15,7 @@ html{scroll-behavior:smooth;}
 }
 /* ---- intro image ----*/
 .title{
-  font-size: 4em;
+  font-size: 5em;
   font-family: LCD5x8H;
   color: var(--primaryLightColor);
   text-align: center;
@@ -54,26 +54,37 @@ html{scroll-behavior:smooth;}
   100%{opacity: 1;top:200px; transform: scale(1);text-shadow: -2px -2px 5px white;}
 }
 .introImgContainer{
-  width: 1200px;
-  height: 600px;
-  margin: auto;
-  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
 }
 .introImage{
   width: 100%;
-  height: 550px;
-  background-image: linear-gradient(to left top, rgba(0,0,0,0.5), rgba(0,0,30,0.9)), url('../images/circuit-board.jpg');
+  height: 500px;
+  background-image: linear-gradient(to left top, rgba(0,0,0,0.5), rgba(0,0,30,0.8)), url('../images/circuit-board.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
   box-shadow: 3px 3px 10px var(--primaryColorDark);
   overflow: hidden;
 }
+.quote{
+  position: absolute;
+  top:10%;
+  left: 10%;
+  right: 10%;
+  color: var(--primaryVeryLight);
+}
+.quote i{
+  font-size: 0.8em;
+}
 /* --- navigation tabs ---*/
 nav{
-  width: 1200px;
-  height: 60px;
-  margin: auto;
+  width: 80%;
+  height: 3em;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   font-size: 1.2em;
   text-align: center;
@@ -94,29 +105,33 @@ nav a:hover, .activeNavTab{
   background-color: var(--primaryColorDark);
   color: var(--bgdColorIntro);
   text-decoration: underline;
+  border: ridge 1px white;
 }
 
 /*--- text container --*/
 .txtContainer{
-  width: 1200px;
+  width: 80%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 100px 20px;
-  margin: auto;
   background-color: var(--bgdColorIntro);
 }
 dt{color: var(--primaryColor);}
 /* --- TOPICS ---*/
 .topics{
-  width: 1200px;
+  width: 80%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--primaryVeryLight);
-  margin: auto;
   padding-top: 90px;
   padding-bottom: 90px;
 }
 .subtitle{padding: 20px 10px 20px 10px; color: var(--primaryColor);font-stretch:ultra-expanded; font-weight: 600;}
 .subtitleProject{padding: 20px 10px 20px 10px; color: var(--primaryVeryLight);font-stretch:ultra-expanded; font-weight: 600;}
 /* --cards --*/
+/*
 .cardContainer{
   border: solid red;
   width: 90%;
@@ -137,6 +152,7 @@ dt{color: var(--primaryColor);}
     color: var(--bgdColorIntro);
     margin-top: -0.2em;
 }
+*/
 /* -- collapsible --*/
 .collapsible{
   cursor: pointer;
@@ -204,9 +220,10 @@ text-decoration:underline;
 .exercises, .labExp, .wi, .credits{
   padding-top: 100px;
   padding-bottom: 100px;
-  width: 1200px;
+  width: 80%;
   height: auto;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .exercises{
 background-color: var(--primaryLightColor);
@@ -257,13 +274,10 @@ background-color: var(--primaryLightColor);
 /*------------- MEDIA SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 1250px){
-  .introImgContainer{
-    width: 900px;
-    height: 450px;
-  }
   .title{font-size: 3em;}
-  figure{   width: 800px;   height: 400px; }
-  .introImage{  height: 400px;}
+  .introImage{
+    height: 380px;
+  }
   .p1, .p2, .p3{  font-size: 1em;}
   .p1 i, .p2 i{  font-size: 0.6em;}
   .p3 i{font-size: 0.5em}
@@ -271,8 +285,6 @@ background-color: var(--primaryLightColor);
 
   /* --- navigation tabs ---*/
   .navTab{
-    width: 800px;
-    height: 50px;
     margin-top: 20px;
     font-size: 0.9em;
   }
@@ -280,15 +292,12 @@ background-color: var(--primaryLightColor);
 
   /*--- text container --*/
   .txtContainer{
-    width: 800px;
-    height: auto;
     padding: 60px 15px 60px 15px;
     font-size: 0.9em;
   }
 
   /* --- topics ---*/
   .topics, .exercises, .labExp, .wi{
-    width: 800px;
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 0.9em;
@@ -304,7 +313,6 @@ background-color: var(--primaryLightColor);
   }
 /* --- credits -------*/
 .credits{
-  width: 800px;
   padding:60px 18px 60px 18px;
   font-size: 0.9em;
 }
@@ -316,16 +324,10 @@ background-color: var(--primaryLightColor);
 ------------- SMALL AND TABLET SCREEN ---------------
 */
 @media only screen and (max-width: 850px) {
-  figure{
-    width: 460px;
+  .introImage{
     height: 300px;
   }
-  .introImgContainer{
-    width: 500px;
-    height: 320px;
-  }
   .title{       font-size: 1.7em;   }
-  .introImage{  height: 300px;}
   .p1, .p2, .p3{  font-size: 0.8em; width: 90%;}
   .p1, .p2{color: var(--primaryVeryLight)}
   .p1 i, .p2 i{  font-size: 0.6em;}
@@ -334,16 +336,13 @@ background-color: var(--primaryLightColor);
 
   /* --- navigation tabs ---*/
   .navTab{
-    width: 460px;
-    height: 45px;
+    height: 5em;
     margin-top: 15px;
     font-size: 0.63em;
   }
 
   /*--- text container --*/
   .txtContainer{
-    width: 460px;
-    height: auto;
     padding: 60px 10px 60px 10px;
     font-size: 0.7em;
   }
@@ -356,7 +355,6 @@ background-color: var(--primaryLightColor);
 }
   /* --- topics ---*/
   .topics, .exercises, .labExp, .wi{
-    width: 460px;
     padding-top: 60px;
     padding-bottom: 40px;
     font-size: 0.7em;
@@ -372,7 +370,6 @@ background-color: var(--primaryLightColor);
   }
   /* --- credits -------*/
   .credits{
-    width: 460px;
     padding: 60px 12px 40px 12px;
     font-size: 0.7em;
   }
