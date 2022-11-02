@@ -1,0 +1,100 @@
+.header{font-weight: 900; font-size: 1.2em; }
+.header span{font-size: 1.8em; color: var(--secondary);}
+.imgActivity img{width: 100%;}
+.imgActivity{margin-bottom: 2em;}
+.activityVideo{width: 50%; margin-top: 2em;}
+.activityVideo video{width: 100%;
+margin: 2em;}
+.linkContent{color: rgb(210,210,210)}
+.linkContent:hover{color: var(--secondary)}
+.content{
+  width: 90%;
+  margin: 5% 5% 0% 5%;
+  padding:1em;
+}
+/* ----- FOOTER NAV ------*/
+.footer_activity{
+  background-color: var(--primary);
+  color:  ;
+  display: inline-block;
+  padding: 1em;
+  width: 100%;
+}
+.footer_nav_a{
+  color:rgb(220,220,220);
+  padding: 1em;
+  background-color: var(--primary);
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+/* =====================
+PROJECTS
+=======================*/
+/* ----- students projects -------*/
+.medals{position: absolute;  width: 20%; right: 0; top:-0.5em;}
+.studentsProjects header{margin: 3em 0em; padding: 1em;  font-weight: 600; color: var(--primary); font-size: 1.2em; background-color: rgb(240,240,240); }
+.project1_card{ width: 40%; border-radius: 5px; box-shadow: 1px 1px 5px gray; background-color: rgb(240,240,240); float: left; margin: 0em 5% 5em 0em; position: relative;}
+.pSummer22{margin: 3em 0em; padding: 0.5em 1em; border-bottom: ridge 1px var(--secondary); font-weight: 600; color: var(--primary); font-size: 1.2em; }
+.project1_card:nth-child(1){margin-left: 5%;}
+.project1_card p{padding: 1em; font-weight: bolder; height: 6em;}
+.project1_card p i{display: block; font-size: 0.8em;}
+.project_img{height: 200px; overflow:hidden;width: 100%;}
+.project_img img{width: 100%; margin-bottom: -0.3em; border-radius: 0px 0px 5px 5px;}
+.studentsProjects a{color: black; text-decoration: none; transition:ease 0.5s; }
+.studentsProjects a:hover{opacity: 0.6; filter:invert(100%);}
+/* ----*/
+.table_project{width: 60%;margin: 2em 0em; background-color: white;}
+.table_project head tr th{padding:  1em; background-color: lightblue; font-size: 1.2em;}
+tr td:nth-child(2){text-align: center; border-left: solid lightgray 1px;}
+tbody tr:nth-child(1){background-color:lightgray; padding: 0.5em;}
+td{border-bottom:  solid lightgray 1px;padding: 0.5em;}
+tbody tr:last-child{font-weight: 700;}
+/* =====================
+js.html
+=======================*/
+.js_ul{
+  width: 60%;
+  margin: 2em auto;
+}
+.js_ul a{
+display: block;
+padding:0.8em;
+text-decoration: none;
+color: var(--primaryDark);
+text-align: center;
+border-bottom: ridge 1px var(--primaryDark);
+}
+.js_ul a:hover{background-color: var(--secondary); color:lightgray; font-weight: 600;}
+.js_ul a:active{background-color: var(--secondary);color:lightgray; font-weight: 600;}
+/* --- footer ----*/
+.footer_nav_a:hover{color:var(--secondary); font-weight: 900; transition: ease 0.3s;}
+/*------------- LARGE SCREEN ----------------------------------------
+*/
+@media only screen and (max-width: 1100px){
+  .project1_card{ width: 80%;  margin: 0em 10% 5em 0em; position: relative;}
+  .project_img{height:auto; }
+}
+/*------------- MEDIUM-LARGE SCREEN ----------------------------------------
+*/
+@media only screen and (max-width: 1100px){
+
+}
+/*------------- SMALL SCREEN ----------------------------------------
+*/
+@media only screen and (max-width: 750px){
+  .header{font-size: 1em;}
+  .header span{font-size: 1.1em;}
+  .js_ul, .table_project{ width: 90%;margin: 1em auto;}
+}
+@media only screen and (max-width: 480px){
+  .content{padding: 1em; }
+  .content iframe{
+    width: 100%;
+  }
+  .activityVideo{width: 100%;}
+  .activityVideo video{width: 100%; margin: 0%;}
+  .footer_activity{
+    font-size: 0.9em;
+  }
+  .footer_nav_a{display: block; }
+}

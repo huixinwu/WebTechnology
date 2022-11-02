@@ -1,0 +1,29 @@
+
+.header a{
+  font-size: 2em;
+  padding: 1em;
+  text-decoration: none;
+}
+.header a:hover{
+  opacity: 0.6;
+}
+.header span{
+  font-size: 1.2em;
+  color:var(--primary);
+  text-align: center;
+  display: block;
+}
+
+.content>i{
+  font-size: 0.8em;
+}
+iframe{
+  width: 60%;
+  height: 350px;
+}
+.contentP{
+  color: var(--secondaryDark);
+  font-weight: 900;
+  font-size: 1.2em;
+  margin-top: 3em;
+}
