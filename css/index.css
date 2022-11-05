@@ -439,7 +439,7 @@ text-decoration: none;
   color:lightgray;
   padding: 2em;
 }
-.copyrighted img{
+.OER_icons{
   width: 15%;
 }
 .copyrighted{
@@ -464,6 +464,7 @@ text-decoration: none;
   .introParagraph{font-size: 2.2em; padding-right: 1em;}
   .card{ width: 40%; margin: 2% 0% 2% 7%; }
   .cardBodyActivity{width: 30%;margin: 1em 0% 2em 2.5%;}
+  .OER_icons{width: 20%;}
 }
 /*------------- MEDIUM-LARGE SCREEN ----------------------------------------
 */
@@ -476,7 +477,6 @@ text-decoration: none;
   .collapsibleContainer{display: block; }
   .title{display: none;}
   .navTab{display: none;}
-
   .subtitle{
     width: 100%;
     margin: -1em 0% 0% 0%;
@@ -489,11 +489,12 @@ text-decoration: none;
 /*------------- MEDIUM SCREEN ----------------------------------------
 */
 @media only screen and (max-width: 750px){
+
   .card{width: 45%;margin: 2% 0% 5% 3%; font-size: 0.9em; }
   .cardBodyActivity p{ height: 30%;}
   .txtContainer, .credits{font-size: 0.9em;}
   .googleMap{width: 90%;margin: 2em auto;}
-
+.OER_icons{width: 30%; }
 }
 /*------------- MEDIUM SCREEN ----------------------------------------
 */
@@ -504,6 +505,7 @@ text-decoration: none;
   .cardBodyActivity{width: 42%; margin: 4%;}
   .card:last-child{margin-bottom: 7em;}
   .credits iframe{width: 50%;height: 200px;}
+  .OER_icons{width: 40%;}
 }
 /*------------- SMALL SCREEN ----------------------------------------
 */
